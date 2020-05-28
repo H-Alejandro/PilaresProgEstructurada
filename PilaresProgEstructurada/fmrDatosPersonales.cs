@@ -56,7 +56,31 @@ namespace PilaresProgEstructurada
                 aux = aux + "b mayor a";
 
             this.txtResultados.Text = aux;
+            this.getSaludos(saludo); // Llamada a la función
+            this.lblNombres.Text = lblNombres.Text + " --> " + this.getCalculos(a, b).ToString();
+        }
+
+        // Procedimientos - Funciones
+        //Las funciones devuelve valores.
+        //El procedimiento es una función que no devuelve valores.
+        void getSaludos(string nombres)
+        {
+            this.lblNombres.Text = "Uso de función que no vuelve valor (" + nombres + ")";
 
         }
+
+        //Función que vuelve el valor
+
+        double getCalculos(int a, int b)
+        {
+
+            double resul = 0;
+            resul = (a * 10) / (b * 2.5);
+
+            return resul;
+
+
+        }
+
     }
 }

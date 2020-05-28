@@ -35,6 +35,7 @@
             this.txtNombres = new System.Windows.Forms.TextBox();
             this.btnAceptar = new System.Windows.Forms.Button();
             this.txtResultados = new System.Windows.Forms.TextBox();
+            this.lblNombres = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -102,11 +103,21 @@
             this.txtResultados.Size = new System.Drawing.Size(604, 145);
             this.txtResultados.TabIndex = 6;
             // 
+            // lblNombres
+            // 
+            this.lblNombres.AutoSize = true;
+            this.lblNombres.Location = new System.Drawing.Point(659, 163);
+            this.lblNombres.Name = "lblNombres";
+            this.lblNombres.Size = new System.Drawing.Size(49, 13);
+            this.lblNombres.TabIndex = 7;
+            this.lblNombres.Text = "Nombres";
+            // 
             // frmDatosPersonales
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lblNombres);
             this.Controls.Add(this.txtResultados);
             this.Controls.Add(this.btnAceptar);
             this.Controls.Add(this.txtNombres);
@@ -131,5 +142,6 @@
         private System.Windows.Forms.TextBox txtNombres;
         private System.Windows.Forms.Button btnAceptar;
         private System.Windows.Forms.TextBox txtResultados;
+        private System.Windows.Forms.Label lblNombres;
     }
 }
