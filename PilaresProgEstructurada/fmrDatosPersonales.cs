@@ -29,7 +29,21 @@ namespace PilaresProgEstructurada
 
         private void btnAceptar_Click(object sender, EventArgs e)
         {
+            //Estructura secuencial
+            String saludo = " "; //cadena de caracteres
+            saludo = this.txtNombres.Text + " " + this.txtApellidos.Text;
             MessageBox.Show("Hola: " + this.txtApellidos.Text + " " + this.txtNombres.Text);
+
+            //Estructura repetitiva 
+            string aux = "";
+            for (int i=1; i<=10; i++)
+            {
+
+                aux = aux + saludo + System.Environment.NewLine;
+
+            }
+
+            this.txtResultados.Text = aux;
         }
     }
 }

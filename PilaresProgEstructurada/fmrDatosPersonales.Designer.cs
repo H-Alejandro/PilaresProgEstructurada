@@ -34,6 +34,7 @@
             this.txtApellidos = new System.Windows.Forms.TextBox();
             this.txtNombres = new System.Windows.Forms.TextBox();
             this.btnAceptar = new System.Windows.Forms.Button();
+            this.txtResultados = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -84,7 +85,7 @@
             // 
             // btnAceptar
             // 
-            this.btnAceptar.Location = new System.Drawing.Point(50, 158);
+            this.btnAceptar.Location = new System.Drawing.Point(461, 116);
             this.btnAceptar.Name = "btnAceptar";
             this.btnAceptar.Size = new System.Drawing.Size(77, 32);
             this.btnAceptar.TabIndex = 5;
@@ -92,11 +93,21 @@
             this.btnAceptar.UseVisualStyleBackColor = true;
             this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
             // 
+            // txtResultados
+            // 
+            this.txtResultados.Location = new System.Drawing.Point(37, 163);
+            this.txtResultados.Multiline = true;
+            this.txtResultados.Name = "txtResultados";
+            this.txtResultados.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.txtResultados.Size = new System.Drawing.Size(604, 145);
+            this.txtResultados.TabIndex = 6;
+            // 
             // frmDatosPersonales
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.txtResultados);
             this.Controls.Add(this.btnAceptar);
             this.Controls.Add(this.txtNombres);
             this.Controls.Add(this.txtApellidos);
@@ -119,5 +130,6 @@
         private System.Windows.Forms.TextBox txtApellidos;
         private System.Windows.Forms.TextBox txtNombres;
         private System.Windows.Forms.Button btnAceptar;
+        private System.Windows.Forms.TextBox txtResultados;
     }
 }
