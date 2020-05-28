@@ -44,6 +44,19 @@ namespace PilaresProgEstructurada
             }
 
             this.txtResultados.Text = aux;
+
+            //Estructura selectiva (condicional)
+
+            int a = 100;
+            int b = 20;
+            if (a > b)
+
+                aux = aux + "a mayor b";
+            else
+                aux = aux + "b mayor a";
+
+            this.txtResultados.Text = aux;
+
         }
     }
 }
