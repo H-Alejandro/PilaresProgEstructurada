@@ -81,6 +81,40 @@ namespace PilaresProgEstructurada
 
 
         }
+        
+        void ejemploPasoValor(int x)
+        {
+            x = x + 100;
+            MessageBox.Show("El nuevo valor de x: " + x.ToString());
+        }
+            private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        void ejemploPasoReferencia(ref int x)
+            //La función recibe la variable original (dirección de memoria 
+            //cualquier cambio de ventana en esta variable se refleja en la original
+        {
+            x = x + 100;
+            MessageBox.Show("El nuevo valor de x: " + x.ToString());
+        }
+        private void btnPasoValor_Click(object sender, EventArgs e)
+        {
+            int x = 5;
+            //ejemploPasoValor(x);
+            this.ejemploParametrosOpcionales(x,200);
+            this.txtValor.Text = x.ToString();
+        }
+
+        void ejemploParametrosOpcionales(int x, int y=10)
+       
+        {
+            x = x + y;
+            MessageBox.Show("Parametro Opcional: " + y.ToString());
+            MessageBox.Show("El nuevo valor de x: " + x.ToString());
+
+        }
 
     }
 }
